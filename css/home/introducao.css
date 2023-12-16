@@ -1,0 +1,7 @@
+.introducao-bg{
+    background-color: var(--cor-01);
+}
+
+.introducao {
+    display: flex;
+}

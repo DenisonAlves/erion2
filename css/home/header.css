@@ -1,0 +1,20 @@
+.header-bg{
+    background-color: var(--cor-01);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;    
+}
+
+.header-menu li {
+    padding: 15px;
+}
