@@ -5,9 +5,11 @@
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
+    justify-content: space-between; 
+    padding-top: 20px;   
+    padding-bottom: 20px;   
 }
+
 
 .header-menu {
     display: flex;
@@ -16,5 +18,7 @@
 }
 
 .header-menu li {
-    padding: 15px;
+    display: inline-block;
+    padding: 15px;    
 }
+

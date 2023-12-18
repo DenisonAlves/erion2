@@ -3,5 +3,53 @@
 }
 
 .introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 130px;
+    align-items: center;
+    justify-items: center;
+}
+
+.introducao h1{
+    padding-top: 80px;
+}
+
+.introducao p{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.introducao-caracteristicas {
+    display: flex;    
+    gap: 32px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.carac1 {
     display: flex;
+    gap: 8px;
+}
+
+.carac2 {
+    display: flex;
+    gap: 8px;
+}
+
+.main-img {
+    position: relative;
+}
+
+.att {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -50px;
+    z-index: 999;
+}
+
+.support {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: 999;
 }

@@ -1,20 +1,30 @@
 .container {
-    box-sizing: 1440px;
-    max-width: 1440px;    
-    margin-left: auto;
-    margin-right: auto;
+    box-sizing: border-box;
+    max-width: 1560px;    
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
   }
   
+  .tag{
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    font-weight: 700;
+    color: var(--cor-08);
+    font-family: 'Roboto', sans-serif;    
+  }
   
   .botao {
     display: inline-block;
     padding: 8px 16px;
-    background: var(--cor-05);
+    background: var(--cor-06);
     border-radius: 5px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     color: var(--cor-00);
-    font: 600 1.25rem/1.5 'Poppins', sans-serif;
+    font: 500 1.25rem/1.5 'Poppins', sans-serif;
     max-width: max-content;  /* O tamanho do botÃ£o nÃ£o passa do tamanho dele.. */
     border: none;
     cursor: pointer;

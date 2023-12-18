@@ -1,0 +1,30 @@
+.tag{    
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.sistema {
+    text-align: center;
+}
+
+.sistema h2{        
+    margin-bottom: 60px;    
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+}
+
+.card div {
+    display: grid;
+    gap: 32px;
+    padding: 40px;
+}
+
+button {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}

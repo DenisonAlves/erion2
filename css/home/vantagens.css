@@ -1,0 +1,37 @@
+.vantagens-bg{
+    background-color: var(--cor-01);
+}
+.vantagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 128px;
+    padding-top: 60px;
+}
+
+.vantagens div {
+    text-align: center;
+}
+
+.vantagens h3{
+    padding-top: 20px;
+    text-align: left;
+}
+
+.vantagens ul {
+    display: grid;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    position: relative;
+    text-align: left;
+}
+
+.vantagens li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../../img/icones/visto.svg);
+    position: absolute;
+    left: -21px;
+}
