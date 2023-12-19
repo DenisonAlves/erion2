@@ -1,0 +1,102 @@
+.contato {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.endereco-bg{
+    background-color: var(--cor-06);
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.contato-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;      
+}
+
+.ponto {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+}
+
+.ponto p{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contato-icon::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 14px;
+    background: url(../../img/icones/contato/location.svg) no-repeat;
+    position: absolute;
+    margin-left: -18px;
+    z-index: 999;    
+}
+
+.contato-icon{
+    margin-left: 18px;
+}
+
+.ponto address > a{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mail-icon::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../../img/icones/contato/envelope.svg) no-repeat;
+    position: absolute;
+    margin-left: -20px; 
+    z-index: 999;
+}
+
+.mail-icon{
+    margin-left: 20px;
+}
+
+.tel-icon::before{
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../../img/icones/contato/phone.svg) no-repeat;
+    position: absolute;
+    margin-left: -20px; 
+    z-index: 999;
+}
+
+.tel-icon{
+    margin-left: 20px;
+}
+
+.redes {
+    display: flex;
+    gap: 30px;
+}
+
+.redes img {
+    height: 32px;
+    width: 32px;
+    color: var(--cor-01);
+}
+
+
+.contato-formulario{
+    background-color: var(--cor-07);
+    border-radius: 0 5px 5px 0;
+}
+
+
+.contato-formulario{
+    text-align: left;
+    padding: 40px;
+}
