@@ -1,0 +1,32 @@
+.segmentos {
+    text-align: center;
+}
+
+.segmentos-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);       
+    margin-top: 60px;    
+}
+
+.segmentos-card div {
+    display: grid;    
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    text-align: left;        
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-left: 2px solid var(--cor-05);
+    border-top: 2px solid var(--cor-05);    
+}
+
+.segmentos-card div:nth-child(4n+1){
+    border-left: none;
+}
+.segmentos-card div:nth-child(n+1):nth-child(-n+4){
+    border-top: none;
+}
+
+
+
+
