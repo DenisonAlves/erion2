@@ -8,11 +8,23 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 145px;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 80px;    
 }
 
-.footer div{
+.footer h3, .footer div{
+    margin-bottom: 20px;
+}
+
+.redes-footer {
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
+
+.footer li{
+    margin-bottom: 8px;
+}
+
+.footer a:hover{
+    color: var(--cor-05);
+}
+

@@ -20,6 +20,10 @@
     border-top: 2px solid var(--cor-05);    
 }
 
+.segmentos-card div h3{
+    width: 100%;
+}
+
 .segmentos-card div:nth-child(4n+1){
     border-left: none;
 }

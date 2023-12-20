@@ -14,9 +14,36 @@
     font-weight: 700;
     color: var(--cor-08);
     font-family: 'Roboto', sans-serif;    
+    position: relative;         
+    z-index: 999;
   }
+
+  .tag::before {
+    content: "";
+    display: inline-block;    
+    width: 100%;
+    height: 2px;
+    background: var(--cor-05);
+    position: absolute;    
+    margin-left: -100%;
+    margin-top: 9px;
+    z-index: -998;
+  }
+  .tag::after {
+    content: "";
+    display: inline-block;    
+    width: 100%;
+    height: 2px;
+    background: var(--cor-05);
+    position: absolute;    
+    margin-right: 0%;    
+    margin-top: 9px;
+    z-index: -998;
+  }
+
+ 
   
-  .botao {
+    .botao {
     display: inline-block;
     padding: 8px 16px;
     background: var(--cor-06);

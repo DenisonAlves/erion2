@@ -126,7 +126,7 @@
 
 
 .contato-formulario{
-    background-color: var(--cor-07);
+    background-color: var(--cor-08);
     border-radius: 0 5px 5px 0;    
 }
 
@@ -136,7 +136,11 @@
     padding: 40px;
 }
 
-@media (maxwidth: 600px){
+.contato .botao{
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px){
     .form {
         grid-template-columns: 1fr;
     }
