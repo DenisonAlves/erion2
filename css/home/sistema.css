@@ -15,16 +15,36 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    text-align: left;
+    text-align: left;    
 }
 
 .card div {
     display: grid;
     gap: 32px;
     padding: 40px;
+    
 }
 
 button {
     margin-top: 40px;
     margin-bottom: 80px;
+}
+
+@media (max-width:1000px){    
+    .card{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:650px){    
+    .card{
+        display: flex;
+        overflow-x: auto;
+    }
+    .card div{
+        min-width: 350px;        
+    }
+    .sistema button {
+        display: none;
+    }
 }

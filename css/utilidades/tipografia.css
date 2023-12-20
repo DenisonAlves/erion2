@@ -28,5 +28,9 @@
   }
   
 
-  
+  @media(max-width: 1200px) {    
+    .font-1-sub {
+      font-size: 1.75rem;
+    }
+  }
   
