@@ -8,7 +8,14 @@
     grid-template-columns: 1fr 1fr;
     text-align: center;
     gap: 40px;
-    position: relative;
+    position: relative;    
+}
+
+.cliente img{
+    object-fit: cover;
+    width: 100%;
+    min-width: 380px;
+    height: 100%;
 }
 
 .cliente h2, p {
@@ -17,6 +24,7 @@
 
 .assinatura {
     margin-top: 40px;
+    padding-bottom: 80px;
     text-align: right;
 }
 
@@ -45,5 +53,39 @@
     margin-top: 30px;    
     margin-left: 15px;
     z-index: 999;
+}
+
+@media (max-width:1200px){
+    .depoimento {
+        font-size: 1.75rem;
+    }
+    .assinatura {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width:800px){
+    .cliente{
+        grid-template-columns: 1fr;
+        gap:0px
+    }
+
+    .cliente h2{
+        margin-bottom: 60px;
+    }
+
+    .depoimento{
+        text-align: center;
+    }
+
+    .assinatura {
+        padding-bottom: 40px;        
+    }
+
+    .cliente img{
+        min-width: auto;
+        max-height: 420px;
+        padding-bottom: 60px;
+    }
 }
 

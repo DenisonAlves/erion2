@@ -69,3 +69,10 @@
     }    
   }
   
+
+  @media (max-width:800px){
+    .container {         
+      padding-left: 30px;
+      padding-right: 30px;      
+    }
+  }
