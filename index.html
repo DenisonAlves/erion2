@@ -11,21 +11,22 @@
 </head>
 <body>
     
-    <header class="header-bg">
+    <header class="header-bg" id="header">
         <div class="header container">
-            <a href="./index.html">
+            <a href="./index.html" id="logo">
                 <img src="./img/logo/erion-sistemas.svg" alt="Erion Emissor">
-            </a>
-            <nav aria-label="primaria">
-                <ul class="header-menu font-1-nav cor-0">
+            </a>            
+            <nav aria-label="primaria" id="nav">
+                <ul class="header-menu font-1-nav cor-0" id="menu" role="menu">
                     <li><a href="#sistema">Sistema</a></li>
                     <li><a href="#vantagens">Vantagens</a></li>
                     <li><a href="#segmentos">Segmentos</a></li>
                     <li><a href="#clientes">Clientes</a></li>
                     <li><a href="#contato">Contato</a></li>                    
-                </ul>               
+                </ul>
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburguer"></span></button>               
             </nav>
-            <a class="botao" href="">Fale Conosco</a>
+           <a class="botao" href="">Fale Conosco</a>
         </div>
     </header>
     
@@ -54,9 +55,9 @@
         </div>
     </article>
     
-    <article class="sistema container">
+    <article class="sistema container" id="sistema">
         <span class="tag">Sistema</span>
-        <h2 class="font-1-sub cor-08">Confira as funcionalides do<br>sistema <span class="cor-06">Erion Emissor</span></h2>
+        <h2 class="font-1-sub cor-08">Confira as funcionalidades do<br>sistema <span class="cor-06">Erion Emissor</span></h2>
         <div class="card">
             <div>
                 <img src="./img/icones/nf-e.svg" alt="Nota Fiscal">
@@ -92,7 +93,7 @@
         <button class="botao">Ver Mais</button>
     </article>
     
-    <article class="vantagens-bg">
+    <article class="vantagens-bg" id="vantagens">
         <div class="vantagens container">
             <img src="./img/geral/vantagens.png" alt="Vantagens do sistema Erion">
             <div>
@@ -109,7 +110,7 @@
         </div>
     </article>
     
-    <article class="segmentos container">
+    <article class="segmentos container" id="segmentos">
         <span class="tag">Segmentos</span>
         <h2 class="font-1-sub cor-08">Alguns dos <span class="cor-06">segmetos</span> que<br>atendemos</h2>
         <div class="segmentos-card">
@@ -164,7 +165,7 @@
         </div>        
     </article>
     
-    <section class="cliente-bg">
+    <section class="cliente-bg" id="cliente">
         <div class="cliente container">
             <div>
                 <span class="tag cor-01">Clientes</span>
@@ -178,7 +179,7 @@
         </div>
     </section>
     
-    <div class="contato container">
+    <div class="contato container" id="contato">
         <span class="tag">Contato</span>
         <h2 class="font-1-sub cor-08">Entre em <span class="cor-06">contato</span> conosco</h2>
         <div class="contato-info endereco-bg">
@@ -260,15 +261,16 @@
             <div>
                 <h3 class="font-1-sub">INFORMAÇÕES</h3>
                 <ul class="font-1-nav">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Sistema</a></li>
-                    <li><a href="">Vantagens</a></li>
-                    <li><a href="">Clientes</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#introducao">Inicio</a></li>
+                    <li><a href="#sistema">Sistema</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
 </body>
+<script src="./script.js"></script>
 </html>
