@@ -79,10 +79,6 @@
     z-index: 1000;
     border: none; 
   }
-  .img-zap {
-    position: fixed; 
-    z-index: 1000;
-  }
 
 
   @media(max-width: 1200px) {
