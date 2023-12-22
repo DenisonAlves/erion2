@@ -65,4 +65,8 @@
         margin-left: 21px;
     }   
 
+    .vantagens img{       
+        min-width: auto;
+    }
+    
 }

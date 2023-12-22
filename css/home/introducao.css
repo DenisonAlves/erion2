@@ -110,7 +110,7 @@
     }   
 }
 
-@media (max-width: 230px){
+@media (max-width: 400px){
     .att {
         max-width: 100px;
         margin-top: -10px;
