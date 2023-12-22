@@ -61,6 +61,25 @@
     background: #27AD27;
   }
   
+  .whatsapp{
+    right: 90px; 
+    visibility: visible; 
+    background: #27D045; 
+    color: var(--cor-00); 
+    position: fixed; 
+    width: 130px; 
+    bottom: 52px; 
+    text-align: center; 
+    font-size: 1rem;
+    font-weight: 500; 
+    line-height: 31px; 
+    height: 32px; 
+    border-radius: 15px; 
+    font-family: 'Poppins', sans-serif; 
+    z-index: 1000;
+    border: none; 
+  }
+
 
   @media(max-width: 1200px) {
     .botao {
