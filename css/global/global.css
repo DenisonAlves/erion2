@@ -27,3 +27,7 @@ body {
   address{
     font-style: initial;
   }
+
+  .icones {
+    min-width: 60px;
+  }
