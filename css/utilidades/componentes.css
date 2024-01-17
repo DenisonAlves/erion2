@@ -41,7 +41,10 @@
     z-index: -998;
   }
 
- 
+  
+  .icones {
+    min-width: 60px;    
+  }
   
     .botao {
     display: inline-block;

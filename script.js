@@ -22,6 +22,10 @@ function showIt2() {document.getElementById("msg1").style.visibility = "visible"
 
 const cartoes = document.querySelector("#card");
 const botao = document.querySelector("#botaoSistema");
+const emissor = document.querySelector("#card");
+const pdv = document.querySelector("#card-pdv");
+var btn_color_emissor = document.querySelector("#btn-emissor");
+var btn_color_pdv = document.querySelector("#btn-pdv");
 
 function verMais(){
     if(cartoes.className == "open"+" card"){
@@ -30,16 +34,28 @@ function verMais(){
     } else {
         cartoes.className = "open"+" card";
         botao.innerHTML = "Mostrar menos";        
-    }
+    }    
 }
 
-const emissor = document.querySelector("#card");
-const pdv = document.querySelector("#card-pdv");
-
 function sistema(){
-    if(pdv.className == "card-pdv-visible"+" pdv"){
-        pdv.className = "pdv";
+    if(pdv.className == "card-pdv-visible"+" card-pdv"){
+        pdv.className = "card-pdv";        
     }else {
-        pdv.className = "card-pdv-visible"+" pdv";
+        pdv.className = "card-pdv-visible"+" card-pdv";
+    }
+    
+    if(pdv.className == "card-pdv-visible"+" card-pdv"){
+        emissor.className = "card-emissor-hidden";
+        btn_color_pdv.style.backgroundColor = "var(--cor-06)";        
+        btn_color_emissor.style.backgroundColor = "var(--cor-03)";
+
+        botao.className = "btn-hidden";
+        
+    }else{
+        emissor.className = "card";
+        btn_color_pdv.style.backgroundColor = "var(--cor-03)";
+        btn_color_emissor.style.backgroundColor = "var(--cor-06)";
+
+        botao.className = "botao";
     }
 }

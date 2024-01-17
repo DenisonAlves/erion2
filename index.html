@@ -57,11 +57,11 @@
     
     <article class="sistema container" id="sistema">
         <span class="tag">Sistema</span>
-        <h2 class="font-1-sub cor-08">Confira as funcionalidades do<br>sistema<span class="cor-06">Erion Emissor </span></h2>
+        <h2 class="font-1-sub cor-08">Confira as funcionalidades do<br>sistema <span class="cor-06">Erion Emissor</span> e <span class="cor-06">PDV</span></h2>
         <div class="escolha-sistema">
-            <button onclick="" class="emissor">Erion Emissor</button>
-            <button onclick="sistema()" class="pdv">Erion PDV</button>
-        </div>
+            <span onclick="sistema()" class="emissor" id="btn-emissor">Erion Emissor</span>
+            <span onclick="sistema()" class="pdv" id="btn-pdv">Erion PDV</span>
+        </div>     
         <div class="card" id="card">
             <div>
                 <img src="./img/icones/nf-e.svg" alt="Nota Fiscal">
@@ -124,21 +124,17 @@
                 <p class="font-2-text">Garanta a segurança dos seus dados com nosso serviço de backup, oferecendo uma solução confiável para preservar as informações essenciais do seu negócio.</p>
             </div>
         </div>
+        
         <div class="card-pdv" id="card-pdv">
-            <div>
-                <img src="./img/icones/nf-e.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">NF-e / NFC-e</h3>
-                <p class="font-2-text">Emissão simplificada de NF-e (Nota Fiscal Eletrônica) e NFC-e (Nota Fiscal de Consumidor Eletrônica) para otimizar suas transações comerciais.</p>
-            </div>
             <div>
                 <img src="./img/icones/shop.svg" alt="Nota Fiscal">
                 <h3 class="font-2-card">Vendas</h3>
                 <p class="font-2-text">Potencialize seus negócios com a função essencial de Vendas, proporcionando praticidade e eficiência em todas as transações.</p>
             </div>
             <div>
-                <img src="./img/icones/estoque.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">Estoque</h3>
-                <p class="font-2-text">Controle total com a função de Estoque, garantindo uma gestão eficiente dos seus recursos para impulsionar o sucesso do seu negócio.</p>
+                <img src="./img/icones/nf-e.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">NFC-e</h3>
+                <p class="font-2-text">Emissão simplificada de NFC-e (Nota Fiscal de Consumidor Eletrônica).</p>
             </div>
             <div>
                 <img src="./img/icones/caixa.svg" alt="Nota Fiscal">
@@ -146,45 +142,20 @@
                 <p class="font-2-text">Gerencie suas transações financeiras de forma eficaz com o Caixa, assegurando controle e clareza em todas as movimentações.</p>
             </div>
             <div>
-                <img src="./img/icones/car.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">MDF-e / CT-e</h3>
-                <p class="font-2-text">Simplifique a gestão logística com Manifesto Eletrônico de Documentos Fiscais e Conhecimento de Transporte Eletrônico, garantindo eficiência e conformidade em suas operações de transporte.</p>
+                <img class="icones" src="./img/icones/balanca.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Conexão com Balança</h3>
+                <p class="font-2-text">Integre-se perfeitamente às operações de pesagem com a funcionalidade de Conexão com Balanças, assegurando precisão e eficiência no controle de produtos em seu negócio.</p>
             </div>
             <div>
-                <img src="./img/icones/medication.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">SNGPC</h3>
-                <p class="font-2-text">Atenda aos requisitos regulatórios com facilidade usando a integração do Sistema Nacional de Gerenciamento de Produtos Controlados, garantindo conformidade e eficácia na gestão de produtos controlados.</p>
+                <img class="icones" src="./img/icones/entrega_pdv.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Pedido de Entrega</h3>
+                <p class="font-2-text">Facilite o processo de entrega com a funcionalidade de Pedido de Entrega, proporcionando uma gestão eficiente e rastreabilidade nas operações logísticas do seu negócio.</p>
             </div>
             <div>
-                <img class="icones" src="./img/icones/ordem_servico.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">Ordem de Serviço</h3>
-                <p class="font-2-text">Otimize a execução de serviços com a funcionalidade de Ordem de Serviço, proporcionando uma gestão eficiente e organizada das atividades em seu negócio.</p>
-            </div>
-            <div>
-                <img class="icones" src="./img/icones/relatorios.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">Relatórios</h3>
-                <p class="font-2-text">Tenha uma visão abrangente do seu negócio com a função de Relatórios, oferecendo insights valiosos para uma tomada de decisão informada e estratégica.</p>
-            </div>
-            <div>
-                <img class="icones" src="./img/icones/orca_condi.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">Orçamentos e Condicionais</h3>
-                <p class="font-2-text">Agilize seus processos de vendas com a funcionalidade de Orçamentos e Condicionais, proporcionando flexibilidade e praticidade na gestão comercial do seu negócio.</p>
-            </div>
-            <div>
-                <img class="icones" src="./img/icones/ordem_servico.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">Manifestação de XML</h3>
-                <p class="font-2-text">Simplifique a gestão fiscal com a funcionalidade de Manifestação de XML, permitindo uma interação ágil e segura com os documentos eletrônicos essenciais para a sua operação.</p>
-            </div>
-            <div>
-                <img class="icones" src="./img/icones/relatorios.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">Etiquetas</h3>
-                <p class="font-2-text">Personalize e simplifique a identificação de produtos com a impressão de etiquetas diretamente do sistema.</p>
-            </div>
-            <div>
-                <img class="icones" src="./img/icones/orca_condi.svg" alt="Nota Fiscal">
-                <h3 class="font-2-card">Backup em Nuvem</h3>
-                <p class="font-2-text">Garanta a segurança dos seus dados com nosso serviço de backup, oferecendo uma solução confiável para preservar as informações essenciais do seu negócio.</p>
-            </div>
+                <img class="icones" src="./img/icones/conexao_off.svg" alt="Nota Fiscal">
+                <h3 class="font-2-card">Trabalha Off-line</h3>
+                <p class="font-2-text">Facilite o processo de entrega com a funcionalidade de Pedido de Entrega, proporcionando uma gestão eficiente e rastreabilidade nas operações logísticas do seu negócio.</p>
+            </div>            
         </div>
         <button onclick="verMais()" class="botao" id="botaoSistema">Ver Mais</button>
     </article>
