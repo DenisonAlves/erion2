@@ -33,7 +33,7 @@ function verMais(){
         botao.innerHTML = "Ver Mais";
     } else {
         cartoes.className = "open"+" card";
-        botao.innerHTML = "Mostrar menos";        
+        botao.innerHTML = "Ver Menos";        
     }    
 }
 

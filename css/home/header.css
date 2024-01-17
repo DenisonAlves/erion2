@@ -26,6 +26,11 @@
     padding: 15px;    
 }
 
+.header-menu li:hover{
+    color: var(--cor-06);
+    transition: 0.2s;
+}
+
 #btn-mobile {
     display: none;
     margin: 0px;
@@ -68,6 +73,7 @@
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
+        width: 60%;
     }
     #btn-mobile {
         display: flex;

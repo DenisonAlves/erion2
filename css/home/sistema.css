@@ -18,7 +18,8 @@
     text-align: left;    
     max-height: 640px; 
     overflow: hidden;
-    transition: 1s;
+    transition: 1s;   
+    padding-bottom: 20px;  
 }
 
 .card-pdv {
@@ -38,8 +39,8 @@
     display: none;    
 }
 
-.card.open{
-    max-height: 1320px;
+.open{
+    max-height: 1340px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -80,7 +81,7 @@
 .card div, .card-pdv div {
     display: grid;
     gap: 32px;
-    padding: 40px;        
+    padding: 40px;               
 }
 
 button {
@@ -88,21 +89,70 @@ button {
     margin-bottom: 80px;
 }
 
-@media (max-width:1000px){    
-    .card{
+@media (max-width:1360px){    
+    .open {
+        max-height: 1400px;
+    }   
+}
+
+@media (max-width:1260px){    
+    .card {
+        padding-bottom: 50px;  
+    }    
+    .open {
+        max-height: 1600px;
+    }  
+    #botaoSistema {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:1150px){    
+    .card, .card-pdv{
         grid-template-columns: 1fr 1fr;
     }
+    .card-pdv{
+        max-height: 1660px;
+        margin-bottom: 40px;
+    }
+    .card, .card-pdv{
+        padding-bottom: 0px;
+    }    
+    .open {
+        max-height: 2000px;
+    }  
+}
+
+@media (max-width:1080px){    
+    .open {
+        max-height: 2330px;
+    }  
+}
+
+@media (max-width:850px){        
+    .card, .card-pdv{
+        padding-bottom: 25px;
+    } 
 }
 
 @media (max-width:650px){   
     .sistema {
         padding-bottom: 60px;
     } 
-    .card{
+    .sistema h2{        
+        font-size: 1.5rem;  
+    }
+    .card, .card-pdv{
         display: flex;
         overflow-x: auto;
     }
+    .card-pdv{
+        padding-bottom: 0px;
+    }
     .card div{
+        min-width: 350px;        
+    }
+    .card-pdv div{
         min-width: 350px;        
     }
     .sistema button {
