@@ -100,6 +100,9 @@
     .introducao-caracteristicas{
         margin-bottom: 30px;
     }    
+    .introducao h1{
+        padding-top: 40px;
+    } 
 }
 
 @media (max-width: 530px){
@@ -107,6 +110,6 @@
         max-width: 100px;
         margin-top: -10px;
         margin-left: 100px;
-    }     
+    }       
 }
 
