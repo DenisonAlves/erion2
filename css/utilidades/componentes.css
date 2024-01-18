@@ -83,6 +83,15 @@
     border: none; 
   }
 
+  .wa-style{
+    right:25px; 
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    z-index:100;
+  }
+
   .success {
     color: var(--cor-00);
     font-size: 1.75rem;
