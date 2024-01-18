@@ -145,6 +145,11 @@
     margin-bottom: 40px;
 }
 
+button:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+}
+
 @media (max-width: 1000px){
     .form {
         grid-template-columns: 1fr;
