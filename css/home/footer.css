@@ -1,6 +1,7 @@
 .footer-bg{
     margin-top: 80px;
     background: var(--cor-08);
+    
 }
 
 .footer {
@@ -8,7 +9,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 145px;
     padding-top: 80px;
-    padding-bottom: 80px;    
+    padding-bottom: 80px;  
+    box-sizing: border-box;
+    
 }
 
 .footer h3, .footer div{
@@ -28,3 +31,25 @@
     color: var(--cor-05);
 }
 
+@media (max-width:1200px){
+    .footer{
+        gap: 100px;
+    }
+}
+
+@media (max-width:1100px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    .footer .quem-somos{
+        grid-column: 1/-1;
+    }
+}
+
+@media (max-width:750px){
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    
+}
